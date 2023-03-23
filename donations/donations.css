@@ -186,6 +186,7 @@ body {
 
     .display-images {
         height: auto;
+        column-gap: 0;
     }
 
     .display1, .display2 {
