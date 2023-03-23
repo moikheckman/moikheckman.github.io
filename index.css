@@ -39,7 +39,7 @@ body {
     align-contents: center;
     background-color: white;
     padding: 10px;
-    width: 80%;
+    width: 60%;
     display: grid;
     grid-template-columns: .3fr auto .3fr;
     grid-template-rows: auto .3fr;
