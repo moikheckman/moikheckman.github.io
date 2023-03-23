@@ -164,8 +164,8 @@ a:hover {
     height: 50px;
     font-family: cecep;
     font-size: 14pt;
-    position: sticky;
-    bottom: 0;
+    /* position: sticky;
+    bottom: 0; */
 }
 
 .universal-footer > div {

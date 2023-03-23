@@ -1,0 +1,202 @@
+body {
+    background-image: url(donations.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.donations-header {
+    font-family: goudy;
+    font-size: 48pt;
+    text-align: center;
+    padding-top:20px;
+}
+
+.display {
+    display: grid;
+    font-family: goudy;
+    margin: 2.5% 2.5%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "info info info"
+    "images images images"
+    "donate donate donate";
+    background: rgba(255,255,255,0.65);
+    border: 5px solid rgb(48,48,48);
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.info-text > p {
+    font-size: 18pt;
+    margin: 0;
+    padding: 3px;
+    line-height: 1.5em;
+}
+.info-text > p > b {
+    font-size: 20pt;
+    line-height: 2em;
+}
+
+.info-text {
+    padding: 30px;
+    grid-area: info;
+}
+
+.post-button {
+    width: 100%;
+    color: white;
+    background-color: salmon;
+    border: 1px solid salmon;
+    transition: all .5s;
+    letter-spacing: 5px;
+    height: 50px;
+    grid-area: donate;
+    align-self: center;
+    justify-self: center;
+    margin-top: 10px;
+}
+
+.post-button:hover {
+    background-color: rgb(211, 94, 80);
+    border: 1px solid rgb(211, 94, 80);
+    cursor: pointer;
+}
+
+.showcase {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.section-header {
+    font-family: goudy;
+    font-size: 36pt;
+    text-align: center;
+}
+
+.list {
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    background: rgba(255,255,255,0.65);
+    border: 5px solid rgb(48,48,48);
+}
+
+.post-thumbnail {
+    font-family: goudy;
+    width: 90%;
+    height: 200pt;
+    background-color: rgb(5,7,11);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "thumbnail picture1 picture2 picture3";
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    transition: .5s all;
+    margin: 2px;
+}
+
+.post-thumbnail:hover {
+    transform: scale(1.05);
+}
+
+.thumbnail, .picture1, .picture2, .picture3 {
+    grid-area: thumbnail;
+    height: 200pt;
+    justify-self: center;
+    justify-self: center;
+}
+
+.picture1 {
+    grid-area: picture1;
+}
+
+.picture2 {
+    grid-area: picture2;
+}
+
+.picture3 {
+    grid-area: picture3;
+}
+
+.display-images {
+    height: 300pt;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "empty display1 display2 empty2";
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    grid-area: images;
+    column-gap: 5%;
+    padding-bottom: 60px;
+}
+
+.display1 {
+    grid-area: display1;
+    height: 300pt;
+}
+
+.display2 {
+    grid-area: display2;
+    height: 300pt;
+}
+
+@media screen and (max-width: 750px) {
+    .display {
+        margin: 2.5% 2.5%;
+    }
+
+    .featured, .list {
+        width: 95%;
+    }
+
+    .post-thumbnail {
+        height: 300px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+        "thumbnail picture1"
+        "picture2 picture3";
+    }
+
+    .thumbnail, .picture1, .picture2, .picture3 {
+        height: 150px;
+        width: 150px;
+    }
+
+    .display-images {
+        height: auto;
+    }
+
+    .display1, .display2 {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1225px) {
+    .display {
+        grid-template-columns: .3fr 1fr .3fr;
+        grid-template-rows: auto auto auto;
+    }
+}
