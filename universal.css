@@ -207,7 +207,7 @@ a:hover {
     width:100px;
     position:absolute;
     left:5%;
-    top:20px;
+    top:0px;
 }
 @media screen and (max-width: 900px) {
     .header-socials {
