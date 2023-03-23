@@ -46,6 +46,9 @@ body {
         width: 400px;
         height: 1600px;
     }
+    .application-header {
+        font-size: 36pt;
+    }
 }
 
 @media screen and (max-width: 1225px) {

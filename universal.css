@@ -217,11 +217,15 @@ a:hover {
     #header-home {
         left: 0;
     }
+    .universal-footer {
+        flex-direction: column;
+        height: 75px;
+    }
+    .universal-footer > div {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 750px) {
-    .universal-footer > div {
-        width: 50%;
-    }
     .footer-socials > a {
         width: 50px;
     }
