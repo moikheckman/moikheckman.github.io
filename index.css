@@ -98,6 +98,9 @@ body {
     .display {
         grid-template-columns: .5fr .75fr 1fr .5fr;
     }
+    .name {
+        font-size: 36pt;
+    }
 }
 
 @media screen and (max-width: 750px) {
@@ -105,5 +108,8 @@ body {
         grid-template-columns: .75fr 1fr;
         grid-template-areas:
         "gears title";
+    }
+    .name {
+        font-size: 24pt;
     }
 }

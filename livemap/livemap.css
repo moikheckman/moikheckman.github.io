@@ -7,7 +7,7 @@ body {
 
 .livemap-header {
     font-family: goudy;
-    font-size:48pt;
+    font-size: 48pt;
     text-align: center;
     padding-top:20px;
 }
@@ -19,21 +19,21 @@ body {
     row-gap: 5%;
     width: 100%;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 8fr;
+    grid-template-rows: 1fr auto;
     grid-template-areas: 
     "info info info"
     "livemap livemap livemap";
 }
 
 .info-text > p {
-    font-size:18pt;
-    margin:0;
-    padding:3px;
+    font-size: 18pt;
+    margin: 0;
+    padding: 3px;
     line-height: 1.5em;
 }
 
 .info-text {
-    padding-left:30px;
+    padding-left: 30px;
     padding-right: 30px;
     grid-area: info;
 }
@@ -42,7 +42,7 @@ body {
     grid-area: livemap;
     background-color: rgb(33, 33, 33);
     width: 95%;
-    height: 100%;
+    height: 100vh;
     align-self: center;
     justify-self: center;
 }
