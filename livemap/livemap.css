@@ -1,0 +1,81 @@
+body {
+    background-image: url(island.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.livemap-header {
+    font-family: goudy;
+    font-size:48pt;
+    text-align: center;
+    padding-top:20px;
+}
+
+.display {
+    padding: 0 0px 60px 0px;
+    display: grid;
+    font-family: goudy;
+    row-gap: 5%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 8fr;
+    grid-template-areas: 
+    "info info info"
+    "livemap livemap livemap";
+}
+
+.info-text > h3 {
+    font-size:32pt;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.info-text > p {
+    font-size:18pt;
+    margin:0;
+    padding:3px;
+    line-height: 1.5em;
+}
+
+.info-text {
+    padding-left:30px;
+    padding-right: 30px;
+    grid-area: info;
+}
+
+.livemap-button {
+    width: 60%;
+    border-radius: 30px;
+    color: white;
+    background-color: salmon;
+    border: 1px solid salmon;
+    transition: all .5s;
+    letter-spacing: 5px;
+    height: 50px;
+    grid-area: info2;
+    align-self: center;
+    justify-self: center;
+    margin: 30px 0px;
+}
+
+.livemap-button:hover {
+    background-color: rgb(211, 94, 80);
+    border: 1px solid rgb(211, 94, 80);
+}
+
+.livemap {
+    grid-area: livemap;
+    background-color: rgb(33, 33, 33);
+    width: 95%;
+    height: 100%;
+    align-self: center;
+    justify-self: center;
+}
+
+@media screen and (max-width: 1225px) {
+    .display {
+        grid-template-columns: .3fr 1fr .3fr;
+    }
+}

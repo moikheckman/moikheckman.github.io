@@ -35,6 +35,7 @@ body {
     gap: 0;
     padding: 0;
     background-color: var(--background);
+    display: block;
 }
 
 a {
@@ -146,7 +147,7 @@ a:hover {
 }
 
 .header-socials > a > img {
-    height:24px;
+    height:32px;
 }
 
 
@@ -162,10 +163,13 @@ a:hover {
     height: 50px;
     font-family: cecep;
     font-size: 14pt;
+    position: sticky;
+    bottom: 0;
 }
 
 .universal-footer > div {
-    width: 300px;
+    width: auto;
+    padding: 0 30px;
 }
 
 .footer-socials {
@@ -180,7 +184,7 @@ a:hover {
 }
 
 .footer-socials > a > img {
-    height:24px;
+    height:32px;
 }
 
 #unhighlight {
