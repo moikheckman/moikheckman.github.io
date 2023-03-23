@@ -214,6 +214,9 @@ a:hover {
     .header-socials {
         display: none;
     }
+    #header-home {
+        left: 0;
+    }
 }
 @media screen and (max-width: 750px) {
     .universal-footer > div {
