@@ -37,6 +37,15 @@ body {
     grid-area: application;
     align-self: center;
     justify-self: center;
+    width: 640px;
+    height: 1100px;
+}
+
+@media screen and (max-width: 900px) {
+    .application {
+        width: 450px;
+        height: 1200px;
+    }
 }
 
 @media screen and (max-width: 1225px) {
