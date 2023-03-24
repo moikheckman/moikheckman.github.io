@@ -48,10 +48,10 @@
 
 .post-thumbnail {
     font-family: goudy;
-    width:90%;
+    width: 90%;
     height: 150px;
     background-color: aliceblue;
-    display:grid;
+    display: grid;
     grid-template-columns: 340px 1fr;
     grid-template-rows: auto auto;
     grid-template-areas:
@@ -66,17 +66,17 @@
 
 .post-thumbnail:hover {
     transform: scale(1.05);
-    color:black;
+    color: black;
 }
 
 .first-post {
     border-top: 1px solid lightgray;
 }
 
-#thumbnail {
+#thumbnail, #thumbnail-ip {
     grid-area: thumbnail;
-    height:150px;
-    width:150px;
+    height: 150px;
+    width: 150px;
     justify-self: center;
     justify-self: center;
 }
@@ -85,7 +85,7 @@
     grid-area: published;
 }
 
-#title {
+#title, #ip {
     grid-area: title;
     font-size: 36pt;
 }
@@ -109,5 +109,10 @@
         position: relative;
         padding-left: 5%;
         font-size: 24pt;
+    }
+    #ip {
+        position: relative;
+        padding-left: 5%;
+        font-size: 20pt;
     }
 }
