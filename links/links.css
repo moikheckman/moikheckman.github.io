@@ -1,3 +1,10 @@
+body {
+    background-image: url(wheatfield.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .showcase {
     width:100%;
     display: flex;

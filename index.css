@@ -1,4 +1,8 @@
 body {
+    background-image: url(cogsmourne.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     font-family: goudy;
 }
 
@@ -76,6 +80,14 @@ body {
     background-color: rgb(211, 94, 80);
     border: 1px solid rgb(211, 94, 80);
     cursor: pointer;
+}
+
+.underline {
+    text-decoration: underline;
+    color: white;
+}
+.underline:hover {
+    color:rgb(211, 94, 80);
 }
 
 .info {
