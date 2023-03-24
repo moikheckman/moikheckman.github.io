@@ -16,7 +16,7 @@ body {
     padding: 0 0px 60px 0px;
     display: grid;
     font-family: goudy;
-    row-gap: 5%;
+    row-gap: 3%;
     width: 100%;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto auto;
