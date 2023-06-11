@@ -12,7 +12,7 @@ body {
     padding-top:20px;
 }
 
-.display {
+.display, .event {
     display: grid;
     font-family: goudy;
     margin: 2.5% 2.5%;
@@ -26,6 +26,19 @@ body {
     border: 5px solid rgb(48,48,48);
     text-align: justify;
     text-justify: inter-word;
+}
+
+.event {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "images info info"
+    "donate donate donate";
+}
+.event-image {
+    grid-area: images;
+    width: 100%;
+    padding: 20px;
 }
 
 .info-text > p {
