@@ -1,0 +1,90 @@
+body {
+    background-image: url(island.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.livemap-header {
+    font-family: goudy;
+    font-size: 48pt;
+    text-align: center;
+    padding-top:20px;
+}
+
+.display {
+    padding: 0 0px 60px 0px;
+    display: grid;
+    font-family: goudy;
+    row-gap: 3%;
+    width: 100%;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    "info"
+    "vote1"
+    "vote2"
+    "vote3"
+    "vote4";
+}
+
+.post-button {
+    width: 95%;
+    color: white;
+    background-color: salmon;
+    border: 1px solid salmon;
+    transition: all .5s;
+    letter-spacing: 5px;
+    height: 50px;
+    align-self: center;
+    justify-self: center;
+    margin-top: 10px;
+}
+
+#button1 {
+    grid-area: vote1;
+}
+
+#button2 {
+    grid-area: vote2;
+}
+
+#button3 {
+    grid-area: vote3;
+}
+
+#button4 {
+    grid-area: vote4;
+}
+
+.post-button:hover {
+    background-color: rgb(211, 94, 80);
+    border: 1px solid rgb(211, 94, 80);
+    cursor: pointer;
+}
+
+.info-text > p {
+    font-size: 18pt;
+    margin: 0;
+    padding: 3px;
+    line-height: 1.5em;
+}
+
+.info-text {
+    padding-left: 30px;
+    padding-right: 30px;
+    grid-area: info;
+    background: rgba(255,255,255,0.65);
+    border: 5px solid rgb(48,48,48);
+    width: 90%;
+    align-self: center;
+    justify-self: center;
+    color: black;
+}
+
+
+@media screen and (max-width: 1225px) {
+    .display {
+        grid-template-columns: auto;
+    }
+}
