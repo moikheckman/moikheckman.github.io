@@ -22,7 +22,7 @@ body {
     "info info info"
     "images images images"
     "donate donate donate";
-    background: rgba(255,255,255,0.65);
+    background: rgba(29, 25, 25, 0.65);
     border: 5px solid rgb(48,48,48);
     text-align: justify;
     text-justify: inter-word;
@@ -103,7 +103,7 @@ body {
     align-content: center;
     align-items: center;
     justify-items: center;
-    background: rgba(255,255,255,0.65);
+    background: rgba(29, 25, 25, 0.65);
     border: 5px solid rgb(48,48,48);
 }
 
